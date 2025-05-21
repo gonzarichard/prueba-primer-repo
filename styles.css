@@ -1,0 +1,76 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff8f5;
+  color: #333;
+}
+
+header {
+  height: 80vh;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+header .container {
+  animation: fadeInUp 1s ease-out;
+}
+@media (min-width: 992px) {
+  header .container {
+    max-width: 800px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 992px) {
+  .card .card-body h5 {
+    font-size: 1.3rem;
+  }
+}
+
+footer {
+  background: linear-gradient(45deg, #b30000, #ff4d4d);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #9a0000;
+  border-color: #9a0000;
+}
+footer .container > * {
+  margin: 10px;
+}
+
+form input,
+form textarea {
+  border-radius: 0.5rem;
+  box-shadow: none;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+form.needs-validation {
+  animation: fadeInUp 0.8s ease-out;
+}/*# sourceMappingURL=styles.css.map */
